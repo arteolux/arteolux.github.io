@@ -1,6 +1,6 @@
 <!doctype html><html lang='ko'><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Privacy Policy - 8789 Content Studio</title><style>body{margin:0;background:#f5f8fd;color:#15243a;font-family:system-ui,sans-serif}main{max-width:800px;margin:auto;padding:24px 20px 64px}pre{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65;font:inherit}a{color:#2459ae}</style><main><p><a href='/'>8789 Content Studio</a></p><pre># 8789 Content Studio 개인정보처리방침 / Privacy Policy
 
-최종 수정: 2026-09-28
+최종 수정: 2026-10-02
 
 운영 주체: 8789 Content Studio (계정 소유자가 자신의 PC에서 운영하는 도구)  
 문의: arteolux@gmail.com
@@ -17,7 +17,13 @@
 
 **보유 기간과 삭제.** 연결 토큰은 운영자가 계정 연결을 해제할 때 로컬 저장소에서 삭제합니다. 초안·미디어·작업 기록은 별도로 로컬 데이터 파일을 삭제할 때까지 남을 수 있습니다. 계정 연결 해제만으로 이미 SNS 플랫폼에 게시된 콘텐츠가 삭제되지는 않습니다. 자세한 절차는 `/data-deletion`에서 확인할 수 있습니다. 플랫폼 자체에 저장된 정보는 해당 플랫폼의 정책에 따릅니다.
 
+**Meta 게시용 임시 미디어.** 운영자가 Facebook·Instagram 게시 화면에서 로컬 이미지·영상을 선택하면, Meta가 파일을 가져갈 수 있도록 임의의 추측하기 어려운 HTTPS 주소에 임시로 저장합니다. 주소를 아는 사람은 만료 전까지 해당 파일에 접근할 수 있으므로 민감한 파일을 사용하지 마세요. 임시 파일은 48시간 후 접근이 차단되고 이후 파일 정리 시 삭제됩니다. 업로드한 미디어 URL 자체는 게시 기록에 저장하지 않습니다.
+
 **문의.** 개인정보 처리·삭제에 대한 문의는 arteolux@gmail.com으로 보낼 수 있습니다.
+
+**YouTube 및 Google 데이터.** 운영자가 YouTube 채널을 연결할 때 Google OAuth 동의 화면에서 `youtube.upload`와 `youtube.readonly` 권한을 요청합니다. 8789는 연결된 채널의 ID·이름·프로필 사진·영상 수를 조회하고, 운영자가 선택한 영상과 제목·설명·태그·공개 범위를 `videos.insert`로 업로드하며, 업로드한 영상의 상태·기본 통계를 조회할 수 있습니다. 조회한 채널 정보와 업로드 기록은 운영자의 로컬 PC에 보관됩니다. 연결 해제 시 로컬 OAuth 토큰을 삭제합니다. 초안·작업 기록은 별도로 삭제해야 하며, YouTube에 업로드한 영상은 YouTube에서 직접 삭제해야 합니다. Google 계정의 앱 연결 관리 화면에서 접근 권한을 철회할 수도 있습니다. 자세한 절차는 `/data-deletion`에 있습니다. Google의 데이터 처리에는 [Google 개인정보처리방침](https://policies.google.com/privacy)이 적용되며, 8789의 Google API 데이터 사용은 [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy)를 따릅니다.
+
+**공개 TikTok 초안 업로드 도구.** `/tiktok/`은 TikTok 사용자가 자신의 계정으로 OAuth 연결해 영상을 자신의 TikTok 편집함으로 보내는 공개 기능입니다. 이 기능은 TikTok 계정 ID, 액세스 토큰 및 선택한 영상 파일을 처리합니다. 토큰은 공개 게이트웨이 프로세스 메모리에만 보관되며 재시작 또는 연결 해제 시 제거됩니다. 영상은 서버에 파일로 저장하지 않고 TikTok 업로드 서버에 전달합니다. TikTok 편집함에 전달된 영상의 보관·삭제는 TikTok 정책과 사용자의 TikTok 계정 설정에 따릅니다. 공개 기능은 소유자용 비공개 대시보드 데이터에 접근하지 않습니다.
 
 ## English
 
@@ -31,5 +37,11 @@
 
 **Retention and deletion.** Disconnecting an account deletes its locally stored token. Drafts, media, and work records may remain until the operator deletes the corresponding local files. Disconnecting does not remove content already published to a social platform. See `/data-deletion` for instructions. Provider-held data is governed by that provider&#x27;s policy.
 
+**Temporary media for Meta publishing.** If the operator selects a local image or video for Facebook or Instagram publishing, the app temporarily hosts it at an unguessable HTTPS URL so Meta can retrieve it. Anyone who obtains the URL can access the file until it expires; do not use sensitive files. Access expires after 48 hours, and the file is removed during a subsequent cleanup. The media URL itself is not stored in the publishing history.
+
 **Contact.** arteolux@gmail.com
+
+**YouTube and Google data.** When the operator connects a YouTube channel, the app requests `youtube.upload` and `youtube.readonly` through Google&#x27;s OAuth consent screen. It retrieves the connected channel&#x27;s ID, name, profile image, and video count; uploads a video and the title, description, tags, and visibility explicitly selected by the operator through `videos.insert`; and may retrieve the uploaded video&#x27;s status and basic statistics. Channel information and upload records are kept locally on the operator&#x27;s computer. Disconnecting removes the locally stored OAuth token. Drafts and work records require separate local deletion, and videos already uploaded to YouTube must be deleted in YouTube. The operator may also revoke the app&#x27;s access in Google Account settings. See `/data-deletion` for details. Google&#x27;s handling of data is governed by the [Google Privacy Policy](https://policies.google.com/privacy). This app&#x27;s use of Google API data follows the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy).
+
+**Public TikTok draft uploader.** The `/tiktok/` tool lets TikTok users authorize their own account and send a selected video to their TikTok inbox for further editing. It processes a TikTok account identifier, access token, and the selected video. Tokens are held in public-gateway process memory only and are removed on disconnect or server restart. Videos are streamed to TikTok and are not saved as files by this service. TikTok controls data retained in its own service. The public tool cannot access the operator&#x27;s private dashboard data.
 </pre></main></html>
